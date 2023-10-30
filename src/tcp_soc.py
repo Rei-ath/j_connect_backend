@@ -1,5 +1,6 @@
 import socket
 import select
+import time
 from consts import *
 
 def main_tcp_socket(address='192.168.0.110', port=42069):
@@ -32,7 +33,9 @@ def main_tcp_socket(address='192.168.0.110', port=42069):
                                 event = EVENTS_VALS[data]
                                 print("EVENTS_VALS[data]",event)
                                 event_in_bytes  = event.to_bytes(1, byteorder='big')
-                                cs.sendall(event_in_bytes)
+                                if len(event_in_bytes)==1:
+                                    cs.sendall(event_in_bytes)
+                                    time.sleep(.1)
                             except Exception as e:
                                 print("just a scratch",e)
 
