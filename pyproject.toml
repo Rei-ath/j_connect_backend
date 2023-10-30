@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "j-connect-backend"
+version = "0.1.0"
+description = "backend for jconnect"
+authors = ["Rei-ath"]
+readme = "README.md"
+packages = [{include = "j_connect_backend"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+websockets = "12.0"
+click = "8.1.7"
+dlib = "19.24.2"
+face-recognition = "1.3.0"
+face-recognition-models = "0.3.0"
+numpy = "1.26.1"
+Pillow = "10.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
