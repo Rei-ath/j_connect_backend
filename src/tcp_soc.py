@@ -3,7 +3,7 @@ import select
 import time
 from consts import *
 
-def main_tcp_socket(address='192.168.0.110', port=42069):
+def main_tcp_socket(address='du ip?', port=42069):
     tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     tcp_socket.bind((address, port))
     tcp_socket.listen(5)
