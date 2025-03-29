@@ -11,7 +11,7 @@ Add your AWS resource information
 
 end="$aws/things/j-connect-thingy/shadow/get/accepted"
 client_id = 'j-connect-thingy'
-server = 'a2r4euk7l75oz1-ats.iot.eu-north-1.amazonaws.com'
+server = "server"
 
 
 # Callback when connection is accidentally lost.
